@@ -1,0 +1,38 @@
+.nav-container{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 309px;
+    height: 34px;
+}
+
+.nav-header_link-home{
+    position: absolute;
+    top: 0;
+    right: -150px;
+    color: #000000;
+    text-decoration: none;
+    font-size: normal;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: right;
+    line-height: 34px;
+}
+
+.nav-header_link-about{
+    position: absolute;
+    top: 0;
+    right: -350px;
+    color: #000000;
+    text-decoration: none;
+    font-size: normal;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: right;
+    line-height: 34px;
+}
+
+.nav-header_link-home:hover, .nav-header_link-about:hover{
+    text-decoration-line: underline;
+}

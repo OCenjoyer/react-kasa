@@ -1,0 +1,14 @@
+import React from 'react'
+import '../card/Card.scss'
+
+export default function Card({cover, title}) {
+	console.log(title);
+  return (
+		<article className="card_logement">
+			<img src={cover} alt="location" />
+			<div className="card_label">
+				<p>{title}</p>
+			</div>
+		</article>
+	);
+}

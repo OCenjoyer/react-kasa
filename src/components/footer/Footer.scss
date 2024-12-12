@@ -1,0 +1,38 @@
+$black: black;
+$white: #FFFFFF;
+$font-size: 1.5rem;
+$line-height: 1.426;
+
+.container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin-top: 5%;
+    height: 209px;
+    background-color: $black;
+
+    &__text {
+        position: absolute;
+        left: 32%;
+        right: 32%;
+        top: 64%;
+        bottom: 14%;     
+        font-style: normal;
+        font-weight: 500;
+        font-size: $font-size;
+        line-height: $line-height;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        color: $white;
+    }
+
+    img {
+        position: absolute;
+        left: 50%;
+        top: 31.58%;
+        transform: translateX(-50%);
+        width: 122px;
+        height: 40px;
+    }
+}
