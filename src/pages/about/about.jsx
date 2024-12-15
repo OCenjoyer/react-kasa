@@ -1,9 +1,12 @@
 import React from "react";
+import AboutBanner from "../../components/abt_banner/Abt_Banner";
+import Collapse from "../../components/collapse/Collapse";
 
 export default function about() {
 	return (
 		<div>
-			<h1>À propos de Kasa</h1>
+			< AboutBanner />
+			< Collapse />
 		</div>
 	);
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const ErrorPage = () => (
+const Error = () => (
   <div className="error-container">
     <h1 className="error-number">404</h1>
     <p className="error-text">Oups! La page que vous demandez n'existe pas.</p>
@@ -11,4 +11,4 @@ const ErrorPage = () => (
   </div>
 );
 
-export default ErrorPage;
+export default Error;
