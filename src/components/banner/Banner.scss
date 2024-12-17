@@ -4,7 +4,10 @@
     width: 100%;
     max-width: 1240px;
     height: 223px;
-    background: url(../../assets/image/background-banner.png) no-repeat center center;    border-radius: 25px;
+    background: rgba(0,0,0,0.3) url(../../assets/image/background-banner.png);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    border-radius: 25px;
     align-items: center;
     justify-content: center;
     margin-top: 63px;

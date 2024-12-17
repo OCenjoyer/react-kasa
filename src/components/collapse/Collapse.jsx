@@ -20,7 +20,7 @@ export default function Collapse(props) {
       <div className="collapseContainer">
         <div onClick={toggleState} className="collapse-about__visible">
           <h2>{props.aboutTitle}</h2>
-          <img src={Chevron} alt="chevron down" />
+          <img className='aboutChevron' src={Chevron} alt="chevron down" />
         </div>
       </div>
       <div

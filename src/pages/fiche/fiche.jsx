@@ -1,4 +1,5 @@
 import React from 'react';
+import Carrousel from '../../../src/components/carousel/Carrousel'
 
 
 export default function Fiche() {
@@ -6,7 +7,7 @@ export default function Fiche() {
 
   return (
     <div>
-      <h1>voici la fiche Logement de l'id :</h1>
+      < Carrousel />
       </div>
   );
 }

@@ -1,8 +1,10 @@
 .abtBackground {
     display: flex;
-    width: 100%;
+    width: 65%;
     height: 223px;
-    background: url(../../../src/assets/image/about-background.png) no-repeat;
+    background: rgba(0,0,0,0.3) url(../../../src/assets/image/about-background.png);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
     background-size: cover;
     border-radius: 25px;
     align-items: center;
