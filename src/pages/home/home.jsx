@@ -10,11 +10,7 @@ export default function Home() {
 			<Banner />
 			<div className="cards-container">
 				{data.map(({ id, cover, title }) => (
-					<Link
-						key={id}
-						className="link_card_logement"
-						to={`/logement/${id}`}
-					>
+					<Link className="link_card_logement" to={`/logement/${id}`} key={id}>
 						<Card cover={cover} title={title} />
 					</Link>
 				))}
