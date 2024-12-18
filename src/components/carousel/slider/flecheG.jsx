@@ -4,7 +4,7 @@ import './sliders.scss'
 
 const FlecheG = () => (
     <div className="flecheG">
-        <img src={gauche} alt="Fleche Gauche" /> {/* après droite ici */}
+        <img src={gauche} alt="Fleche Gauche" /> {/* après gauche ici */}
     </div>
 );
 

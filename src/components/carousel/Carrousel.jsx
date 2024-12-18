@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import flecheG from '../../components/carousel/slider/flecheG';
-import flecheD from '../../components/carousel/slider/flecheD'
-import './Carrousel.scss'
+import FlecheG from '../../components/carousel/slider/flecheG'; 
+import FlecheD from '../../components/carousel/slider/flecheD';
+import './Carrousel.scss';
 
 export default function Carrousel({ slides }) {
 	const [current, setCurrent] = useState(0);
@@ -15,20 +15,20 @@ export default function Carrousel({ slides }) {
 		setCurrent((prev) => (prev === 0 ? length - 1 : prev - 1));
 	};
 
-  return (
-    <section id="carrousel-container">
-      {length > 1 && (
-        <>
-          <flecheG onClick={prevSlide} />
-          <flecheD onClick={nextSlide} />
-        </>
-      )}
-      {length > 0 && (
-        <>
-          <img src={slides[current]} alt="appartement à louer" className="slideImage" />
-          <span className="slide-number">{current + 1}/{length}</span>
-        </>
-      )}
-    </section>
-  );
+	return (
+		<section id="carrousel-container">
+			{length > 1 && (
+				<>
+					<FlecheG onClick={prevSlide} /> {/* Utilisez la bonne syntaxe JSX */}
+					<FlecheD onClick={nextSlide} /> {/* Utilisez la bonne syntaxe JSX */}
+				</>
+			)}
+			{length > 0 && (
+				<>
+					<img src={slides[current]} alt="appartement à louer" className="slideImage" />
+					<span className="slide-number">{current + 1}/{length}</span>
+				</>
+			)}
+		</section>
+	);
 }

@@ -1,7 +1,15 @@
-.fleche {
+.flecheG, .flecheD {
     position: absolute;
     top: 50%;
     width: 47px;
     height: 79px;
-    background-color: red;
+    cursor: pointer; 
+}
+
+.flecheG {
+    left: 10px;
+}
+
+.flecheD {
+    right: 10px; 
 }
