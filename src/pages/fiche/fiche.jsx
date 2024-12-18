@@ -1,47 +1,61 @@
 import React from 'react';
 import { useParams } from "react-router-dom";
 import Carrousel from '../../../src/components/carousel/Carrousel';
-import Collapse from '../../components/collapse/Collapse'
+import Collapse from '../../components/collapse/Collapse';
 import Proprio from "../../components/proprio/Proprio";
 import Notes from "../../components/notes/Notes";
 import Tag from "../../components/tag/Tag";
 import infos from "../../logements/logements.json";
+import './fiche.scss';
+import '../../components/tag/Tag.scss';
 
-
-export default function Fiche() {
+export default function FicheLogement() {
 	const params = useParams();
 	const pickedAppart = infos.find(({ id }) => id === params.id);
-	const { pictures: slidePics, title, location, tags, description, equipments } = pickedAppart;
 
-	const ImageData = [...slidePics];
+	if (!pickedAppart) {
+		return <div>Logement non trouvé</div>;
+	}
+
+	const slidePics = pickedAppart.pictures;
+	const tags = pickedAppart.tags;
+	const equipments = pickedAppart.equipments;
 	const equip = equipments.map((item, index) => (
 		<li key={index} className="equipList">
 			{item}
 		</li>
 	));
 
+	const description = pickedAppart.description;
+	const location = pickedAppart.location; 
+	const ProprioName = pickedAppart.host.name;
+	const ProprioPic = pickedAppart.host.picture;
+	const rating = pickedAppart.rating; 
+
 	return (
-		<div className="fiche-container" key={params.id}>
+		<div key={params.id} className="fiche-container">
 			<Carrousel slides={slidePics} />
-			<div className="title-tags-container">
-				<div className="title-container">
-					<h1>{title}</h1>
-					<h3>{location}</h3>
+			<section className="hostInfo-container">
+				<div className="title-tags-container">
+					<div className="title-container redFont">
+						<h1>{pickedAppart.title}</h1>
+						<h3 className="location">{location}</h3>
+					</div>
+					<div className="tags-container">
+						{tags.map((tag) => (
+							<Tag key={tag} tag={tag} />
+						))}
+					</div>
 				</div>
-				<div className="tags-container">
-					{tags.map(tag => (
-						<Tag key={tag} tag={tag} />
-					))}
+				<div className="rate-host-container">
+					<div className="host-container redFont">
+						<Proprio ProprioName={ProprioName} ProprioPic={ProprioPic} />
+					</div>
+					<div className="rate-container">
+						<Notes score={rating} />
+					</div>
 				</div>
-			</div>
-			<div className="rate-host-container">
-				<div className="host-container">
-					<Proprio />
-				</div>
-				<div className="rate-container">
-					<Notes />
-				</div>
-			</div>
+			</section>
 			<div className="collapse-fiche-container">
 				<Collapse aboutTitle="Description" aboutText={description} />
 				<Collapse aboutTitle="Équipements" aboutText={equip} />

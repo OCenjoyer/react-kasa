@@ -1,0 +1,36 @@
+.redFont {
+    font-family: Montserrat;
+    line-height: 51.34px;
+    color: #FF6060;
+}
+
+.title-container {
+    padding-left: 95px;
+}
+
+.location {
+    color: black;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25.67px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.tag {
+    display: inline-block;
+    width: 365px;
+    height: 25px;
+    background-color: #FF6060;
+    color: white;
+    border-radius: 12.5px;
+    text-align: center;
+    line-height: 25px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 5px;
+    pointer-events: none;
+}

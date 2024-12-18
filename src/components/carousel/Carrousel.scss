@@ -1,8 +1,14 @@
 #carrousel-container {
+    width: 1240px;
+    height: 415px;
+    gap: 0px;
+    border-radius: 25px 0px 0px 0px;
+    opacity: 1;
+    margin: 0 auto;
+    overflow: hidden;
     position: relative;
-    justify-content: center;
-    width: 100%;
 }
+
 
 .slideImage {
     display: flex;

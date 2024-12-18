@@ -1,10 +1,12 @@
 import React from 'react';
-import './Tag.scss'
+import './Tag.scss';
 
-const Tag = ({ tag }) => (
-  <div>
-    <h1>{tag}</h1>
-  </div>
-);
+const Tag = ({ tag }) => {
+    return (
+        <div className="tags">
+            {tag}
+        </div>
+    );
+};
 
 export default Tag;

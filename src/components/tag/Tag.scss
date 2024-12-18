@@ -1,0 +1,22 @@
+.tags {
+    display: inline-block;
+    width: 115px;
+    height: 25px;
+    background-color: #FF6060;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 25px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 5px;
+    pointer-events: none;
+}
+
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+    margin-left: 85px;
+}

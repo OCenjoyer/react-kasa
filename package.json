@@ -41,6 +41,7 @@
     "@babel/preset-react": "^7.26.3",
     "npm-check-updates": "^17.1.11",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "sass-loader": "^16.0.4"
   }
 }
