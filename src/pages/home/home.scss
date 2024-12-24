@@ -1,0 +1,28 @@
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+  
+  .link_card_logement {
+    width: 100%;
+    max-width: 340px;
+  }
+  
+  @media (max-width: 768px) {
+    .cards-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .link_card_logement {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
