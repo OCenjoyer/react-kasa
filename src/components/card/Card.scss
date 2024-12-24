@@ -57,6 +57,9 @@ $background-color: rgba(0, 0, 0, 0.4);
     width: 100%; 
     height: auto; 
   }
+  .card_label {
+    margin-bottom: 20px;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
