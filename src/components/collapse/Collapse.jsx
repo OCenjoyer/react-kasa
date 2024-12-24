@@ -24,7 +24,7 @@ export default function Collapse(props) {
           src={Chevron} 
           alt="chevron down" 
           className={toggle ? 'rotated' : ''}
-        />
+          />
         </div>
       </div>
       <div

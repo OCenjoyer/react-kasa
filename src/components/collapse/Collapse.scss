@@ -63,3 +63,37 @@
         transition: 0.4s ease-in-out;
       }
   }
+
+  @media (max-width: 768px) {
+    .collapse-about {
+        &__visible {
+            width: 335px;
+            height: 35px;
+            margin-bottom: -1px;
+        }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .collapse-about {
+        &__visible {
+            padding: 8px;
+            h2 {
+                font-size: 16px;
+            }
+        }
+
+        &__toggle {
+            p {
+                font-size: 14px;
+                padding-left: 50px; 
+                width: 90%;
+                max-width: 100%; 
+                display: -webkit-box; 
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 9; 
+                overflow: hidden; 
+            }
+        }
+    }
+}
