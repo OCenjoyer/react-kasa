@@ -1,38 +1,49 @@
-.nav-container{
-    position: relative;
+.nav-container {
     display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    width: 309px;
-    height: 34px;
-}
-
-.nav-header_link-home{
-    position: absolute;
-    top: 0;
-    right: -150px;
+    gap: 60px;
+    margin-right: 10px;
+    margin-bottom: -30px;
+  }
+  
+  .nav-header_link-home,
+  .nav-header_link-about {
     color: #000000;
     text-decoration: none;
-    font-size: normal;
     font-size: 24px;
     font-weight: 500;
-    text-align: right;
-    line-height: 34px;
-}
+  }
+  
+  .nav-header_link-home:hover,
+  .nav-header_link-about:hover {
+    text-decoration: underline;
+  }
 
-.nav-header_link-about{
-    position: absolute;
-    top: 0;
-    right: -350px;
-    color: #000000;
-    text-decoration: none;
-    font-size: normal;
-    font-size: 24px;
-    font-weight: 500;
-    text-align: right;
-    line-height: 34px;
-}
+  @media (min-width: 319px) and (max-width: 323px) {
+    .nav-container,
+    .nav-header_link-home,
+    .nav-header_link-about {
+        gap: 10px;
+        margin-left: 1px; 
+        font-size: 14px;
+    }
+  }
 
-.nav-header_link-home:hover, .nav-header_link-about:hover{
-    text-decoration-line: underline;
-}
+  @media (min-width: 374px) and (max-width: 376px) {
+    .nav-container,
+    .nav-header_link-home,
+    .nav-header_link-about {
+        gap: 10px;
+        margin-left: 8px; 
+        font-size: 14px;
+    }
+  }
+
+  @media (min-width: 424px) and (max-width: 426px) {
+    .nav-container,
+    .nav-header_link-home,
+    .nav-header_link-about {
+        gap: 10px;
+        margin-left: 10px; 
+        font-size: 14px;
+    }
+  }
