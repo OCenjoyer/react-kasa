@@ -39,13 +39,15 @@ $line-height: 1.426;
 
 @media (max-width: 768px) {
     .container {
+        margin-top: -200px;
+        padding-bottom: 0;
         img {
             top: 70px;
         }
 
         &__text {
             margin-top: -10px;
-            font-size : 12px;
+            font-size: 12px;
         }
     }
 }
