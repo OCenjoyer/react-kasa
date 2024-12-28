@@ -34,3 +34,49 @@
     margin: 5px;
     pointer-events: none;
 }
+
+@media (max-width: 768px) {
+    .fiche-container {
+        padding: 10px;
+    }
+}
+@media (max-width: 768px) {
+    #carrousel-container {
+        width: 335px;
+        height: 255px;
+    }
+
+    .slide-number {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .title-container h1 {
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 25.67px;
+        text-align: left;
+        margin-left: -90px;
+        -webkit-line-clamp: 2; 
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        overflow-wrap: break-word; 
+        white-space: normal;
+    }
+}
+
+@media (max-width: 768px) {
+    .location {
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 19.96px;
+        text-align: left;
+        margin-left: -90px;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+}
+

@@ -1,9 +1,8 @@
 .flecheG, .flecheD {
     position: absolute;
     top: 50%;
-    width: 47px;
-    height: 79px;
-    cursor: pointer; 
+    transform: translateY(-50%);
+    cursor: pointer;
 }
 
 .flecheG {
@@ -11,5 +10,21 @@
 }
 
 .flecheD {
-    right: 10px; 
+    right: 10px;
+}
+
+@media (max-width: 768px) {
+    .flecheG {
+        width: 11.67px;
+        height: 19.8px;
+    }
+
+    .flecheD {
+        width: 11.67px;
+        height: 19.8px;
+    }
+
+    .slide-number {
+        display: none;
+    }
 }
